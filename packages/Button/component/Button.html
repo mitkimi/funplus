@@ -1,0 +1,4 @@
+<button :class="`fun-plus-button fun-plus-button-${type} ${danger ? `fun-plus-${type}-danger` : ''}`" :disabled="loading || disabled">
+  <img v-if="loading" class="loading-img" src="./images/dual.svg" />
+  <slot></slot>
+</button>

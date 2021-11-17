@@ -1,0 +1,40 @@
+@import '../../assets/global.less';
+
+.banner-section {
+  height: 500px;
+  background: #F9FBFF;
+  .banner-container {
+    height: 100%;
+    background: url('./images/undraw_engineering_team_u99p.png') no-repeat;
+    background-size: 531px 478px;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      background: #ffffff;
+      width: 170px;
+      height: 120px;
+    }
+    .pre-name {
+      font-family: Skia;
+      font-size: 13px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+    .name {
+      font-family: Skia;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .welcome-buttons {
+      margin-top: 20px;
+      * {
+        margin: 0 10px;
+        width: 130px;
+      }
+    }
+  }
+}

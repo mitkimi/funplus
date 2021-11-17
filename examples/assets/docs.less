@@ -1,0 +1,125 @@
+.mitkimi-markdown {
+  color: #333333;
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  h5 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  h6 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    font-size: 14px;
+    th {
+      background: #efeff3;
+      padding: 0 10px;
+    }
+    tr {
+      height: 45px;
+      &:nth-child(2n) {
+        background: #f8f8f9;
+      }
+      td {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  code {
+    background: #efeff3;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  ul, ol {
+    margin-left: 20px;
+    li {
+      margin: 10px 0;
+    }
+  }
+  pre {
+    background: #f8f8f9;
+    padding: 30px 20px;
+    code {
+      background: transparent;
+      padding: 0;
+      line-height: 22px;
+      overflow-x: hidden;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: wrap;
+    }
+  }
+
+  blockquote {
+    padding: 8px 16px;
+    background-color: #efeff3;
+    border-radius: 4px;
+    border-left: 5px solid #999999;
+    margin: 20px 0;
+    p {
+      margin: 5px 0;
+    }
+  }
+  a:link, a:visited {
+    color: #409eff;
+    transition: all, 300ms;
+  }
+  a:hover, a:active {
+    color: rgb(102, 177, 255);
+  }
+  // 锚点链接样式污染
+  .header-anchor {
+    opacity: .5;
+    display: none;
+    color: #cccccc;
+    // margin-left: -23px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

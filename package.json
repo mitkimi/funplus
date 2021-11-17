@@ -1,18 +1,33 @@
 {
-  "name": "funplus",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@mitkimi/funplus",
+  "version": "0.0.1",
+  "description": "A private Vue2.x UI Component Library",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name @mitkimi/funplus --dest lib packages/index.js",
+    "publish:npm": "npm run lib && npm publish",
+    "publish:web": "npm run build && scp -r ./dist/* root@47.104.80.66:/home/www/[target]",
+    "publish:all": "npm run publish:npm && npm run publish:web"
   },
+  "main": "lib/@mitkimi/funplus.common.js",
+  "author": "mitkimi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitkimi/funplus.git"
+  },
+  "homepage": "http://funplus.focuslatex.com",
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "github-markdown-css": "^4.0.0",
+    "highlight.js": "^10.4.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -33,6 +48,10 @@
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
+    "markdown-it-chain": "^1.3.0",
+    "markdown-it-container": "^2.0.0",
     "lint-staged": "^9.5.0",
     "vue-template-compiler": "^2.6.11"
   },

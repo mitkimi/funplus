@@ -1,0 +1,46 @@
+// 颜色
+@lightBackground: #f8f8f9;
+@menuActiveBackground: #333333;
+@menuActiveColor: #ffffff;
+
+@aMainColor: #333333;
+@aHoverColor: #666666;
+
+// 外挂字体
+@font-face {
+  font-family: Skia;
+  src: url('./skia.ttf');
+}
+
+// 全局样式
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: @aMainColor;
+  transition: all, 300ms;
+}
+a:hover, a:visited {
+  color: @aHoverColor;
+}
+// 临时的
+.page {
+  padding-top: 100px;
+}
+.page-core {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+// 覆盖污染
+pre {
+  margin: 0!important;
+}
