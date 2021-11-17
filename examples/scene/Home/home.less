@@ -3,6 +3,28 @@
 .banner-section {
   height: 500px;
   background: #F9FBFF;
+  position: relative;
+  .bowl {
+    width: 244px;
+    height: 244px;
+    border-radius: 50%;
+    background: linear-gradient(320.47deg, rgba(210, 244, 220, 0.4) 20.46%, rgba(106, 235, 142, 0) 89.53%);
+  }
+  .bowl-big {
+    width: 364px;
+    height: 364px;
+    background: linear-gradient(315deg, rgba(213, 235, 255, 0.5) 20.29%, rgba(215, 239, 247, 0) 85.04%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-210%, -100%);
+  }
+  .bowl-small {
+    position: absolute;
+    left: 50%;
+    top: 50;
+    transform: translate(-200%, 100%);
+  }
   .banner-container {
     height: 100%;
     background: url('./images/undraw_engineering_team_u99p.png') no-repeat;
