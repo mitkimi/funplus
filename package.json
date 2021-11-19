@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name @mitkimi/funplus --dest lib packages/index.js",
     "publish:npm": "npm run lib && npm publish",
-    "publish:web": "npm run build && scp -r ./dist/* root@47.104.80.66:/home/www/[target]",
+    "publish:web": "npm run build && scp -r ./dist/* root@47.104.80.66:/home/www/uiweb@funplus.illiaccess.com/dist",
     "publish:all": "npm run publish:npm && npm run publish:web"
   },
   "main": "lib/@mitkimi/funplus.common.js",
