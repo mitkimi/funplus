@@ -1,12 +1,12 @@
 @import '../../assets/global.less';
 
 .header-fluid {
-  // background: @lightBackground;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 64px;
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0 20px;
   z-index: 9;
   .header {
     height: 100%;
@@ -15,7 +15,6 @@
     justify-content: space-between;
     align-items: center;
     .logo {
-      padding: 8px 25px;
       color: #333333;
       font-family: Skia;
       border-radius: 8px;

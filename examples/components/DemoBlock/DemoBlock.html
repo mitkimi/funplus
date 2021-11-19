@@ -3,12 +3,12 @@
     <slot name="source"></slot>
   </div>
   <collapse>
-    <div class="code" v-if="scoped">
+    <div class="code" v-if="isExpanded">
       <slot name="highlight"></slot>
     </div>
   </collapse>
-  <div :class="`toggle ${scoped ? 'active' : ''}`" @click="() => { handleCodeToggle() }">
-    <span v-if="scoped">隐藏代码</span>
+  <div :class="`toggle ${isExpanded ? 'active' : ''}`" @click="() => { handleCodeToggle() }">
+    <span v-if="isExpanded">隐藏代码</span>
     <span v-else>显示代码</span>
   </div>
 </div>

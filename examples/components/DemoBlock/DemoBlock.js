@@ -16,7 +16,7 @@ export default {
   },
   data () {
     return {
-      scoped: false
+      isExpanded: false
     }
   },
   mounted () {
@@ -27,8 +27,8 @@ export default {
   },
   methods: {
     handleCodeToggle (buffer) {
-      const target = buffer || !this.scoped
-      this.scoped = target
+      const target = buffer || !this.isExpanded
+      this.isExpanded = target
     }
   }
 }

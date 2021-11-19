@@ -6,20 +6,20 @@ const MenuComponent = {
     return {
       menu: [
         {
-          key: 'guide',
-          name: '指南'
+          key: 'design',
+          name: '设计'
+        },
+        {
+          key: 'document',
+          name: '文档'
         },
         {
           key: 'components',
           name: '组件'
         },
         {
-          key: 'developer',
-          name: '开发者'
-        },
-        {
-          key: 'about',
-          name: '关于'
+          key: 'sources',
+          name: '资源'
         }
       ]
     }
@@ -47,7 +47,6 @@ const MenuComponent = {
       })()
       const param = SubMenu[key] ? SubMenu[key][flag].key : null
       const path = `/${key}${param ? '/' + param : ''}`
-      console.log('menu/ next path:', path)
       this.$router.push({
         path
       })

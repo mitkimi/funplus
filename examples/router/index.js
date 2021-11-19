@@ -29,10 +29,18 @@ const routes = [
     component: () => import('../scene/About')
   },
   {
-    path: '/guide/:routeId',
-    name: 'Guide',
+    path: '/design/:routeId',
+    name: 'Design',
     meta: {
-      title: '指南 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '设计 - FunPlus - A private Vue2.x UI Component Library.'
+    },
+    component: Document
+  },
+  {
+    path: '/document/:routeId',
+    name: 'Document',
+    meta: {
+      title: '文档 - FunPlus - A private Vue2.x UI Component Library.'
     },
     component: Document
   },
@@ -45,10 +53,10 @@ const routes = [
     component: Document
   },
   {
-    path: '/developer',
+    path: '/sources',
     name: 'Developer',
     meta: {
-      title: '开发者 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '资源 - FunPlus - A private Vue2.x UI Component Library.'
     },
     component: () => import('../scene/Developer')
   }

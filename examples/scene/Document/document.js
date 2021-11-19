@@ -43,7 +43,11 @@ const DocumnetScene = {
   methods: {
     loadMarkdown () {
       const arr = []
-      const buffer = [...Menu.guide, ...Menu.components]
+      const buffer = [
+        ...Menu.design,
+        ...Menu.document,
+        ...Menu.components
+      ]
       buffer.map(e => {
         if (e.isMarkdownPage) {
           arr.push(e.key)
@@ -56,7 +60,6 @@ const DocumnetScene = {
       buffer.shift()
       const menuStr = buffer[0]
       const path = `/${menuStr}/${key}`
-      console.log('next path', path)
       this.$router.push({
         path
       })

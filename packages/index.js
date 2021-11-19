@@ -1,6 +1,8 @@
+import Row from './Row'
 import Button from './Button'
 
 const components = [
+  Row,
   Button
 ]
 const install = function (Vue) {

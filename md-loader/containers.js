@@ -18,7 +18,4 @@ module.exports = md => {
       return '</demo-block>'
     }
   })
-
-  // md.use(mdContainer, 'tip')
-  // md.use(mdContainer, 'warning')
 }

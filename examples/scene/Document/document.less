@@ -1,51 +1,54 @@
 @import '../../assets/global.less';
 .document-page {
   .header {
-    border-bottom: 1px solid #999999;
-    background: #f8f8f9;
+    background: #ffffff;
+    box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.1);
   }
   .page {
     padding-top: 100px;
     padding-bottom: 40px;
-    .page-core {
-      display: flex;
-      flex-direction: row;
-      background: #ffffff;
-      position: relative;
-      .list-menu {
-        width: 240px;
-        height: calc(100vh - 140px);
-        overflow-y: scroll;
-        position: fixed;
-        padding-bottom: 20px;
-        .list-item-container {
-          .link {
-            .list-item {
-              height: 40px;
-              font-size: 14px;
-              transition: all, 300ms;
-              cursor: pointer;
-              color: #666666;
-              line-height: 40px;
-              &:hover {
-                color: #333333;
-              }
-            }
-            .list-item-active {
-              color: #333333;
-              font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    position: relative;
+    .list-menu {
+      width: 240px;
+      height: calc(100vh - 140px);
+      overflow-y: scroll;
+      position: fixed;
+      padding-bottom: 20px;
+      .list-item-container {
+        .link {
+          .list-item {
+            height: 40px;
+            font-size: 14px;
+            transition: all, 300ms;
+            cursor: pointer;
+            color: #888888;
+            line-height: 40px;
+            border-right: 2px solid rgba(0, 0, 0, 0);
+            padding: 0 20px;
+            &:hover {
+              color: #1B80DD;
             }
           }
-          .not-a-link {
-            margin-top: 10px;
+          .list-item-active {
+            background: #C2E2FF;
+            border-right: 2px solid #1B80DD;
+            color: #1B80DD;
+            font-weight: bold;
           }
         }
+        .not-a-link {
+          margin-top: 10px;
+          padding: 0 20px;
+        }
       }
-      .main {
-        width: calc(100% - 280px);
-        margin-left: 280px;
-        padding-bottom: 20px;
-      }
+    }
+    .main {
+      width: calc(100% - 300px);
+      margin-left: 280px;
+      padding-bottom: 20px;
     }
   }
 }
