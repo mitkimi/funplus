@@ -1,14 +1,14 @@
 export default {
-  name: 'Row',
+  name: 'Col',
   props: {
-    gutter: {
+    span: {
       type: Number,
-      default: 0
+      default: 12
     }
   },
   data () {
     return {
-      style: {}
+      componentClass: []
     }
   },
   mounted () {
@@ -16,6 +16,7 @@ export default {
   },
   methods: {
     init () {
+      this.componentClass.push(`fun-plus-col-${this.span}`)
     }
   }
 }

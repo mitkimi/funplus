@@ -1,9 +1,13 @@
 import Row from './Row'
+import Col from './Col'
 import Button from './Button'
+import Input from './Input'
 
 const components = [
   Row,
-  Button
+  Col,
+  Button,
+  Input
 ]
 const install = function (Vue) {
   if (install.installed) return

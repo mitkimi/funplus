@@ -1,0 +1,8 @@
+<div :class="['fun-plus-input', 'fun-plus-input-default', ...inputClass]">
+  <input
+    :type="currentType"
+    v-model="currentValue"
+    @focus="handleInputFocus"
+    @blur="handleInputBlur"
+    :placeholder="placeholder" />
+</div>
