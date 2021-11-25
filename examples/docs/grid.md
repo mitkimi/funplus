@@ -21,22 +21,42 @@
 :::demo
 ```html
 <Row>
-  <Col :span="12" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 12</Col>
+  <Col :span="12">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 12</div>
+  </Col>
 </Row>
 <Row>
-  <Col :span="6" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 6</Col>
-  <Col :span="6" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 6</Col>
+  <Col :span="6">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 6</div>
+  </Col>
+  <Col :span="6">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 6</div>
+  </Col>
 </Row>
 <Row>
-  <Col :span="4" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 4</Col>
-  <Col :span="4" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 4</Col>
-  <Col :span="4" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 4</Col>
+  <Col :span="4">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 4</div>
+  </Col>
+  <Col :span="4">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 4</div>
+  </Col>
+  <Col :span="4">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 4</div>
+  </Col>
 </Row>
 <Row>
-  <Col :span="3" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
-  <Col :span="3" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
-  <Col :span="3" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
-  <Col :span="3" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
 </Row>
 ```
 :::
@@ -45,22 +65,69 @@
 :::demo
 ```html
 <Row>
-  <Col :span="6" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 6</Col>
-  <Col :span="3" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
-  <Col :span="3" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
+  <Col :span="6">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 6</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
 </Row>
 <Row>
-  <Col :span="3" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
-  <Col :span="6" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 6</Col>
-  <Col :span="1" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 1</Col>
-  <Col :span="2" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 2</Col>
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="6">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 6</div>
+  </Col>
+  <Col :span="1">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 1</div>
+  </Col>
+  <Col :span="2">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 2</div>
+  </Col>
+  
 </Row>
 <Row>
-  <Col :span="1" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 1</Col>
-  <Col :span="2" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 2</Col>
-  <Col :span="3" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</Col>
-  <Col :span="4" style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 4</Col>
-  <Col :span="2" style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 2</Col>
+  <Col :span="1">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 1</div>
+  </Col>
+  <Col :span="2">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 2</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="4">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 4</div>
+  </Col>
+  <Col :span="2">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 2</div>
+  </Col>
+</Row>
+```
+:::
+
+### 间距
+可以给 `Row` 设置 `gutter` 属性来给每个格子中间设置间距。
+
+:::demo
+```html
+<Row :gutter="20">
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;" class="test">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #F3F3F3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
+  <Col :span="3">
+    <div style="background: #D3D3D3; height: 60px; line-height: 60px; text-align: center;">col: 3</div>
+  </Col>
 </Row>
 ```
 :::
