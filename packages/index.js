@@ -3,13 +3,15 @@ import Col from './Col'
 import Button from './Button'
 import Input from './Input'
 import Skeleton from './Skeleton'
+import Card from './Card'
 
 const components = [
   Row,
   Col,
   Button,
   Input,
-  Skeleton
+  Skeleton,
+  Card
 ]
 const install = function (Vue) {
   if (install.installed) return
