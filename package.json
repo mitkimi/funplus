@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "A private Vue2.x UI Component Library",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "watch": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
