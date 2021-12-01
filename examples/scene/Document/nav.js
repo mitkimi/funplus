@@ -68,12 +68,6 @@ const components = [
     style: {}
   },
   {
-    key: 'pagination',
-    isMarkdownPage: true,
-    name: 'Pagination 分页',
-    style: {}
-  },
-  {
     key: 'stepper',
     isMarkdownPage: true,
     name: 'Stepper 步骤条',
@@ -95,12 +89,6 @@ const components = [
     key: 'form',
     isMarkdownPage: true,
     name: 'Form 表单',
-    style: {}
-  },
-  {
-    key: 'form-item',
-    isMarkdownPage: true,
-    name: 'FormItem 表单域',
     style: {}
   },
   {
@@ -152,6 +140,12 @@ const components = [
     }
   },
   {
+    key: 'pagination',
+    isMarkdownPage: true,
+    name: 'Pagination 分页',
+    style: {}
+  },
+  {
     key: 'tooltip',
     isMarkdownPage: true,
     name: 'ToolTip 工具提示',
@@ -160,7 +154,7 @@ const components = [
   {
     key: 'popover',
     isMarkdownPage: true,
-    name: '气泡',
+    name: 'Popover 气泡',
     style: {}
   },
   {
@@ -179,6 +173,12 @@ const components = [
     key: 'alert',
     isMarkdownPage: true,
     name: 'Alert 警示',
+    style: {}
+  },
+  {
+    key: 'message',
+    isMarkdownPage: true,
+    name: 'Message 全局提示',
     style: {}
   },
   {
