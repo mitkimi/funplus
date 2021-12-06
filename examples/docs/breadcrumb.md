@@ -1,2 +1,22 @@
 # Breadcrumb 面包屑
-待补充
+
+:::demo
+```html
+<Breadcrumb :breadcrumb="breadcrumb" />
+
+<script>
+export default {
+  data () {
+    return {
+      breadcrumb: [
+        'FunPlus',
+        'Components',
+        'navigation',
+        'Breadcrumb'
+      ]
+    }
+  }
+}
+</script>
+```
+:::

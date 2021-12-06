@@ -1,5 +1,6 @@
 import Row from './Row'
 import Col from './Col'
+import Breadcrumb from './Breadcrumb'
 import Button from './Button'
 import Input from './Input'
 import Skeleton from './Skeleton'
@@ -9,6 +10,7 @@ import Stepper from './Stepper'
 const components = [
   Row,
   Col,
+  Breadcrumb,
   Button,
   Input,
   Skeleton,

@@ -1,0 +1,19 @@
+.fun-plus-breadcrumb {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  .fun-plus-breadcrumb-item {
+    margin-right: 20px;
+    &:after {
+      content: '/';
+      margin-left: 20px;
+    }
+    &:last-child {
+      font-weight: 600;
+      color: #4C9EEA;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
