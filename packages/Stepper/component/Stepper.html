@@ -1,0 +1,23 @@
+<div class="fun-plus-stepper" :style="{ width: typeof(width) === 'number' ? `${width}px` : width }">
+  <div class="fun-plus-stepper-container">
+    <div class="paddle-container">
+      <div v-for="item, index in steps" :key="`stepper-step-${index}`"
+        :class="[
+        'paddle',
+        index < current ? 'stepper-done' : index === current ? 'stepper-current' : 'stepper-not-reach'
+        ]">
+      </div>
+    </div>
+    <div class="bar-container">
+      <div v-for="item, index in steps.length - 1" :key="`steper-bar-${index}-to-${index + 1}`"
+        :class="[
+          'bar',
+          index === current ? 'bar-current-to-not-reach' : index === current - 1 ? 'bar-done-to-current' : index < current - 1 ? 'bar-done-to-done' : 'bar-not-reach-to-not-reach'
+        ]">
+      </div>
+    </div>
+  </div>
+  <div class="fun-plus-stepper-content-container">
+    <div class="content" v-for="item, index in steps">{{item}}</div>
+  </div>
+</div>

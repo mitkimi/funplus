@@ -4,6 +4,7 @@ import Button from './Button'
 import Input from './Input'
 import Skeleton from './Skeleton'
 import Card from './Card'
+import Stepper from './Stepper'
 
 const components = [
   Row,
@@ -11,7 +12,8 @@ const components = [
   Button,
   Input,
   Skeleton,
-  Card
+  Card,
+  Stepper
 ]
 const install = function (Vue) {
   if (install.installed) return
