@@ -56,7 +56,7 @@
     <icon-pad keyName="apps" name="菜单"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="buger" name="菜单"></icon-pad>
+    <icon-pad keyName="burger" name="菜单"></icon-pad>
   </Col>
   <Col :span="2">
     <icon-pad keyName="setting" name="设置"></icon-pad>
@@ -84,4 +84,272 @@
   </Col>
 </Row>
 
-### 阿斯顿发生
+### 数学
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="plus" name="加"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="minus" name="减"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="times" name="乘"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="division" name="除"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="percent" name="百分号"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
+
+### 方向
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="arrow-up" name="上"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="arrow-right" name="右"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="arrow-down" name="下"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="arrow-left" name="左"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
+
+### 提示
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="info" name="信息"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="success" name="成功"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="warning" name="警告"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="error" name="错误"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
+
+### 电商
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="coupon" name="优惠券"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="coin" name="金币/积分"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="wallet" name="钱包"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="date" name="日期"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="time" name="时间"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="timer" name="计时器"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="tag" name="标签"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="flame" name="火"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
+
+### 社交
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="share" name="分享"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="message" name="消息"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="idea" name="想法"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="mouse" name="鼠标"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="keyboard" name="键盘"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="mail" name="邮件"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="trophy" name="奖杯"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="medal" name="奖牌"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="award" name="徽章"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="discover" name="发现"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="position" name="定位"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="map" name="地图"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="key" name="钥匙"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="qr" name="二维码"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="pay-qr" name="支付二维码"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="barcode" name="条形码"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="scan" name="扫描"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
+
+### 后台
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="create" name="创建"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="edit" name="编辑"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="delete" name="删除"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="paperclip" name="回形针"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="person" name="人"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="usb" name="USB"></icon-pad>
+  </Col>
+</Row>
+
+### R&D
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="git" name="Git"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="branch" name="分支"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="commit" name="提交"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="merge" name="合并"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="pull-request" name="PR"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="layers" name="层"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="appstore" name="苹果应用商店"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="googleplay" name="谷歌应用商店"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="bug" name="缺陷"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="buffer" name="缓冲"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="guide" name="指南"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
+
+### 品牌
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="apple" name="苹果"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="android" name="安卓"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="google" name="谷歌"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="instagram" name="Instagram"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="weibo" name="微博"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="wechat" name="微信"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="qq" name="QQ"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="tiktok" name="抖音"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="redbook" name="小红书"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>

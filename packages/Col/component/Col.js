@@ -20,10 +20,8 @@ export default {
       }
       const gutter = parent ? parent.gutter : 0
       const HALF_GUTTER = `${gutter / 2}px`
-      console.log('HALF_GUTTER', HALF_GUTTER)
       style.paddingLeft = HALF_GUTTER
       style.paddingRight = HALF_GUTTER
-      console.log(style)
       return style
     }
   },

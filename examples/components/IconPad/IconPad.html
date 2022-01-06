@@ -1,5 +1,7 @@
 <Card :title="name">
-  <div class="icon-pad">
+  <div class="icon-pad"
+    v-clipboard:copy='`<Icon name="${keyName}\" />`''
+    v-clipboard:success="handleCopy">
     <div class="icon">
       <Icon :name="keyName" />
     </div>
