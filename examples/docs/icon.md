@@ -2,6 +2,30 @@
 
 语义化的矢量图形。
 
+使用 `<Icon />` 标签完成渲染。此标签对图标不进行颜色设置。请使用 css 样式对其设置颜色。
+
+:::demo
+```html
+<div class="icon-demo-container">
+  <Icon class="icon-demo" name="spinning" />
+  <Icon class="icon-demo" name="setting" />
+  <Icon class="icon-demo" name="appstore" />
+</div>
+<style>
+.icon-demo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon-demo-container .icon-demo {
+  font-size: 26px;
+  margin: 0 20px;
+}
+</style>
+```
+:::
+
 ## 图标列表
 
 我们根据图标的使用场景，对图标进行了分类
@@ -62,21 +86,47 @@
     <icon-pad keyName="setting" name="设置"></icon-pad>
   </Col>
   <Col :span="2">
-  </Col>
-  <Col :span="2">
-  </Col>
-</Row>
-<Row :gutter="20">
-  <Col :span="2">
     <icon-pad keyName="spinning" name="加载中"></icon-pad>
   </Col>
   <Col :span="2">
     <icon-pad keyName="ringing" name="加载中"></icon-pad>
   </Col>
+</Row>
+
+### 媒体
+
+<Row :gutter="20">
   <Col :span="2">
-    <icon-pad keyName="loading" name="加载中"></icon-pad>
+    <icon-pad keyName="play" name="播放"></icon-pad>
   </Col>
   <Col :span="2">
+    <icon-pad keyName="pause" name="暂停"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="stop" name="停止"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="prev" name="上一曲"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="next" name="下一曲"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="fullscreen" name="全屏"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="volume-mute" name="音量（静音）"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="volume-0" name="音量（小）"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="volume-1" name="音量（中）"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="volume-2" name="音量（大）"></icon-pad>
   </Col>
   <Col :span="2">
   </Col>
@@ -158,9 +208,6 @@
     <icon-pad keyName="coin" name="金币/积分"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="wallet" name="钱包"></icon-pad>
-  </Col>
-  <Col :span="2">
     <icon-pad keyName="date" name="日期"></icon-pad>
   </Col>
   <Col :span="2">
@@ -169,13 +216,16 @@
   <Col :span="2">
     <icon-pad keyName="timer" name="计时器"></icon-pad>
   </Col>
-</Row>
-<Row :gutter="20">
+
   <Col :span="2">
     <icon-pad keyName="tag" name="标签"></icon-pad>
   </Col>
+</Row>
+<Row :gutter="20">
   <Col :span="2">
     <icon-pad keyName="flame" name="火"></icon-pad>
+  </Col>
+  <Col :span="2">
   </Col>
   <Col :span="2">
   </Col>
@@ -211,9 +261,6 @@
 </Row>
 <Row :gutter="20">
   <Col :span="2">
-    <icon-pad keyName="trophy" name="奖杯"></icon-pad>
-  </Col>
-  <Col :span="2">
     <icon-pad keyName="medal" name="奖牌"></icon-pad>
   </Col>
   <Col :span="2">
@@ -228,11 +275,11 @@
   <Col :span="2">
     <icon-pad keyName="map" name="地图"></icon-pad>
   </Col>
-</Row>
-<Row :gutter="20">
   <Col :span="2">
     <icon-pad keyName="key" name="钥匙"></icon-pad>
   </Col>
+</Row>
+<Row :gutter="20">
   <Col :span="2">
     <icon-pad keyName="qr" name="二维码"></icon-pad>
   </Col>
@@ -244,6 +291,8 @@
   </Col>
   <Col :span="2">
     <icon-pad keyName="scan" name="扫描"></icon-pad>
+  </Col>
+  <Col :span="2">
   </Col>
   <Col :span="2">
   </Col>

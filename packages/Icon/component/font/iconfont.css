@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2992575 */
-  src: url('iconfont.woff2?t=1641468519231') format('woff2'),
-       url('iconfont.woff?t=1641468519231') format('woff'),
-       url('iconfont.ttf?t=1641468519231') format('truetype');
+  src: url('iconfont.woff2?t=1641530636793') format('woff2'),
+       url('iconfont.woff?t=1641530636793') format('woff'),
+       url('iconfont.ttf?t=1641530636793') format('truetype');
 }
 
 .iconfont {
@@ -10,6 +10,146 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-percent:before {
+  content: "\e634";
+}
+
+.icon-paperclip:before {
+  content: "\e637";
+}
+
+.icon-times:before {
+  content: "\e638";
+}
+
+.icon-wallet:before {
+  content: "\e64f";
+}
+
+.icon-weibo:before {
+  content: "\e653";
+}
+
+.icon-fullscreen:before {
+  content: "\e65e";
+}
+
+.icon-qq:before {
+  content: "\e660";
+}
+
+.icon-android:before {
+  content: "\e65d";
+}
+
+.icon-volume-1:before {
+  content: "\e641";
+}
+
+.icon-play:before {
+  content: "\e650";
+}
+
+.icon-next:before {
+  content: "\e651";
+}
+
+.icon-prev:before {
+  content: "\e652";
+}
+
+.icon-volume-0:before {
+  content: "\e654";
+}
+
+.icon-pause:before {
+  content: "\e655";
+}
+
+.icon-volume-2:before {
+  content: "\e656";
+}
+
+.icon-instagram:before {
+  content: "\e657";
+}
+
+.icon-warning:before {
+  content: "\e658";
+}
+
+.icon-volume-mute:before {
+  content: "\e659";
+}
+
+.icon-stop:before {
+  content: "\e65a";
+}
+
+.icon-date:before {
+  content: "\e65c";
+}
+
+.icon-keyboard:before {
+  content: "\e631";
+}
+
+.icon-redbook:before {
+  content: "\e63f";
+}
+
+.icon-map:before {
+  content: "\e640";
+}
+
+.icon-merge:before {
+  content: "\e642";
+}
+
+.icon-person:before {
+  content: "\e643";
+}
+
+.icon-instagram:before {
+  content: "\e644";
+}
+
+.icon-coupon:before {
+  content: "\e645";
+}
+
+.icon-message:before {
+  content: "\e646";
+}
+
+.icon-spinning:before {
+  content: "\e647";
+}
+
+.icon-upload:before {
+  content: "\e648";
+}
+
+.icon-setting:before {
+  content: "\e649";
+}
+
+.icon-tiktok:before {
+  content: "\e64a";
+}
+
+.icon-pay-qr:before {
+  content: "\e64b";
+}
+
+.icon-eye-open:before {
+  content: "\e64c";
+}
+
+.icon-wechat:before {
+  content: "\e64d";
 }
 
 .icon-arrow-down:before {
@@ -172,10 +312,6 @@
   content: "\e628";
 }
 
-.icon-percent:before {
-  content: "\e629";
-}
-
 .icon-star-empty:before {
   content: "\e62a";
 }
@@ -212,24 +348,12 @@
   content: "\e633";
 }
 
-.icon-qq:before {
-  content: "\e634";
-}
-
 .icon-idea:before {
   content: "\e635";
 }
 
 .icon-layers:before {
   content: "\e636";
-}
-
-.icon-wallet:before {
-  content: "\e637";
-}
-
-.icon-date:before {
-  content: "\e638";
 }
 
 .icon-discover:before {
