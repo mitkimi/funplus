@@ -13,7 +13,7 @@
 - [Electron](https://www.electronjs.org/)
 
 ## 版本
-- 开发版：0.0.2
+- 开发版：0.0.4
 
 ## 链接
 暂无
