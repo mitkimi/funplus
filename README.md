@@ -1,3 +1,4 @@
+![Fun Plus](https://github.com/mitkimi/funplus/blob/master/examples/assets/images/logo.png?raw=true)
 # Fun Plus
 
 website: [funplus.illiaccess.com](https://funplus.illiaccess.com)
