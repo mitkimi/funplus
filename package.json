@@ -1,6 +1,6 @@
 {
   "name": "@mitkimi/funplus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A private Vue2.x UI Component Library",
   "scripts": {
     "watch": "vue-cli-service serve",

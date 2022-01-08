@@ -10,11 +10,11 @@
 
 ```javascript
 import Vue from 'vue'
-import DejaVu from '@mitkimi/funplus'
+import FunPlus from '@mitkimi/funplus'
 import '@mitkimi/funplus/lib/@mitkimi/funplus.css'
 import App from './App'
 
-Vue.use(DejaVu)
+Vue.use(FunPlus)
 
 new Vue({
   el: '#app',
@@ -73,9 +73,9 @@ new Vue({
 首先，在 `plugins/` 目录中建立一个 `funplus.js` 文件，内容如下：
 ```javascript
 import Vue from 'vue'
-import DejaVu from '@mitkimi/funplus'
+import FunPlus from '@mitkimi/funplus'
 
-Vue.use(DejaVu)
+Vue.use(FunPlus)
 ```
 
 然后修改 `nuxt.config.js` 的内容，在 `plugins` 属性中引入，并设置为在服务端运行
