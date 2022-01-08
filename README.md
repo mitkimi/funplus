@@ -9,14 +9,14 @@ website: [funplus.illiaccess.com](https://funplus.illiaccess.com)
 
 ## 安装
 ```bash
-npm install @mitkimi/funplus
+npm install funplus-ui
 ```
 
 ## 快速开始
 ```javascript
 // main.js
 import Vue from 'vue'
-import FunPlus from '@mitkimi/funplus'
+import FunPlus from 'funplus-ui'
 
 Vue.use(FunPlus)
 ```

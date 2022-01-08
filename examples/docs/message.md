@@ -72,7 +72,7 @@ export default {
 
 ## 单独引用
 ```javascript
-import { Message } from '@mitkimi/funplus'
+import { Message } from 'funplus-ui'
 
 Message.info('This is my message for you')
 ```

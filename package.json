@@ -1,5 +1,5 @@
 {
-  "name": "@mitkimi/funplus",
+  "name": "funplus-ui",
   "version": "0.0.4",
   "description": "A private Vue2.x UI Component Library",
   "scripts": {
@@ -7,12 +7,12 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name @mitkimi/funplus --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib --name funplus-ui --dest lib packages/index.js",
     "publish:npm": "npm run lib && npm publish",
     "publish:web": "npm run build && scp -r ./dist/* root@47.104.80.66:/home/www/uiweb@funplus.illiaccess.com/dist",
     "publish:all": "npm run publish:npm && npm run publish:web"
   },
-  "main": "lib/@mitkimi/funplus.common.js",
+  "main": "lib/funplus-ui.common.js",
   "author": "mitkimi",
   "repository": {
     "type": "git",

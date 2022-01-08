@@ -10,8 +10,8 @@
 
 ```javascript
 import Vue from 'vue'
-import FunPlus from '@mitkimi/funplus'
-import '@mitkimi/funplus/lib/@mitkimi/funplus.css'
+import FunPlus from 'funplus-ui'
+import 'funplus-ui/lib/funplus-ui.css'
 import App from './App'
 
 Vue.use(FunPlus)
@@ -41,7 +41,7 @@ npm install babel-plugin-component --save-dev
     [
       "component",
       {
-        "libraryName": "@mitkimi/funplus"
+        "libraryName": "funplus-ui"
       }
     ]
   ]
@@ -52,7 +52,7 @@ npm install babel-plugin-component --save-dev
 
 ```javascript
 import Vue from 'vue'
-import { Button, Select } from '@mitkimi/funplus'
+import { Button, Select } from 'funplus-ui'
 import App from './App'
 
 Vue.component(Button.name, Button)
@@ -73,7 +73,7 @@ new Vue({
 首先，在 `plugins/` 目录中建立一个 `funplus.js` 文件，内容如下：
 ```javascript
 import Vue from 'vue'
-import FunPlus from '@mitkimi/funplus'
+import FunPlus from 'funplus-ui'
 
 Vue.use(FunPlus)
 ```
