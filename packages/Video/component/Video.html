@@ -1,0 +1,5 @@
+<div class="fun-plus-video" :style="videoStyle">
+  <video>
+    <source v-for="item,index in sources" :key="`video-source-${index}`" :src="item.src || item.url" />
+  </video>
+</div>

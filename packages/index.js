@@ -8,6 +8,8 @@ import Card from './Card'
 import Stepper from './Stepper'
 import Icon from './Icon'
 import Message from './Message'
+import Video from './Video'
+import Collapse from './Collapse'
 
 const components = [
   Row,
@@ -19,7 +21,9 @@ const components = [
   Card,
   Stepper,
   Icon,
-  Message
+  Message,
+  Video,
+  Collapse
 ]
 const install = function (Vue) {
   if (install.installed) return

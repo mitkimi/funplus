@@ -63,7 +63,7 @@ const Transition = {
 }
 
 export default {
-  name: 'collapseTransition',
+  name: 'Collapse',
   functional: true,
   render (h, { children }) {
     const data = {

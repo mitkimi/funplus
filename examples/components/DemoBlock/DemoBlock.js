@@ -1,4 +1,3 @@
-import collapse from './elTransition'
 import 'highlight.js/styles/github.css'
 import hljs from 'highlight.js'
 const highlightCode = () => {
@@ -10,9 +9,6 @@ const highlightCode = () => {
 export default {
   props: {
     desc: {}
-  },
-  components: {
-    collapse
   },
   data () {
     return {

@@ -1,6 +1,10 @@
-<div class="fun-plus-message">
-  <div :class="['icon', `icon-type-${type}`]">
-    <Icon :name="type" />
+<Collapse @after-leave="handleAfterLeave">
+  <div class="fun-plus-message-container" v-if="visible" :style="positionStyle">
+    <div class="fun-plus-message">
+      <div :class="['icon', `icon-type-${type}`]">
+        <Icon :name="type" />
+      </div>
+      <div class="message">{{content}}</div>
+    </div>
   </div>
-  <div class="message">{{content}}</div>
-</div>
+</Collapse>
