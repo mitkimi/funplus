@@ -6,6 +6,7 @@
         'paddle',
         index < current ? 'stepper-done' : index === current ? 'stepper-current' : 'stepper-not-reach'
         ]">
+        <Icon class="icon" v-if="index <= current" :name="index === current ? 'current' : index < current ? 'finish' : ''" />
       </div>
     </div>
     <div class="bar-container">
