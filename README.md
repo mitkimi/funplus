@@ -3,7 +3,7 @@
 
 website: [funplus.illiaccess.com](https://funplus.illiaccess.com)
 
-> A private Vue2.x UI Component Library.
+> A Vue2.x UI Component Library.
 
 `funplus` 是为 Focus Latex 网站设计，已简约、酷炫为主要设计的 Vue 2.x 组件库，主要用于满足 Focus Latex 前后台开发使用。
 

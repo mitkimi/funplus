@@ -11,7 +11,7 @@ const routes = [
     path: '/',
     name: 'Home',
     meta: {
-      title: 'FunPlus - A private Vue2.x UI Component Library.'
+      title: 'FunPlus - A Vue2.x UI Component Library.'
     },
     component: Home
   },
@@ -24,7 +24,7 @@ const routes = [
     path: '/about',
     name: 'About',
     meta: {
-      title: '关于 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '关于 - FunPlus - A Vue2.x UI Component Library.'
     },
     component: () => import('../scene/About')
   },
@@ -32,7 +32,7 @@ const routes = [
     path: '/design/:routeId',
     name: 'Design',
     meta: {
-      title: '设计 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '设计 - FunPlus - A Vue2.x UI Component Library.'
     },
     component: Document
   },
@@ -40,7 +40,7 @@ const routes = [
     path: '/document/:routeId',
     name: 'Document',
     meta: {
-      title: '文档 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '文档 - FunPlus - A Vue2.x UI Component Library.'
     },
     component: Document
   },
@@ -48,7 +48,7 @@ const routes = [
     path: '/components/:routeId',
     name: 'Components',
     meta: {
-      title: '组件 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '组件 - FunPlus - A Vue2.x UI Component Library.'
     },
     component: Document
   },
@@ -56,7 +56,7 @@ const routes = [
     path: '/sources',
     name: 'Developer',
     meta: {
-      title: '资源 - FunPlus - A private Vue2.x UI Component Library.'
+      title: '资源 - FunPlus - A Vue2.x UI Component Library.'
     },
     component: () => import('../scene/Developer')
   }

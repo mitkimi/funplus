@@ -1,7 +1,7 @@
 {
   "name": "funplus-ui",
-  "version": "0.0.4",
-  "description": "A private Vue2.x UI Component Library",
+  "version": "0.0.5",
+  "description": "A Vue2.x UI Component Library",
   "scripts": {
     "watch": "vue-cli-service serve",
     "build": "vue-cli-service build",
