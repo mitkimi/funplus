@@ -74,6 +74,7 @@ new Vue({
 ```javascript
 import Vue from 'vue'
 import FunPlus from 'funplus-ui'
+import 'funplus-ui/lib/funplus-ui.css'
 
 Vue.use(FunPlus)
 ```

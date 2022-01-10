@@ -1,7 +1,13 @@
 # 更新日志
 
-### 0.0.4
+### 0.0.5 - 0.0.6
 > 2022-01-08
+
+- override, not a private project
+- publish to npm
+
+### 0.0.4
+> 2022-01-07
 
 - add Icon/Stepper components
 - add Message function

@@ -425,6 +425,22 @@
     <icon-pad keyName="qq" name="QQ"></icon-pad>
   </Col>
 </Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="funplus" name="FunPlus"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="focusLatex" name="胶典乳胶衣"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
+  </Col>
+</Row>
 
 ### 支付
 
@@ -439,13 +455,13 @@
     <icon-pad keyName="paypal" name="Paypal"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="unionpay" name="中国银联"></icon-pad>
+    <icon-pad keyName="unionPay" name="中国银联"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="americanexpress" name="美国运通"></icon-pad>
+    <icon-pad keyName="americanExpress" name="美国运通"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="mastercard" name="万事达"></icon-pad>
+    <icon-pad keyName="masterCard" name="万事达"></icon-pad>
   </Col>
 </Row>
 <Row :gutter="20">
