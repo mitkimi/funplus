@@ -379,21 +379,82 @@
     <icon-pad keyName="instagram" name="Instagram"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="weibo" name="微博"></icon-pad>
+    <icon-pad keyName="twitter" name="推特"></icon-pad>
   </Col>
   <Col :span="2">
-    <icon-pad keyName="wechat" name="微信"></icon-pad>
+    <icon-pad keyName="telegram" name="电报"></icon-pad>
   </Col>
 </Row>
 <Row :gutter="20">
   <Col :span="2">
-    <icon-pad keyName="qq" name="QQ"></icon-pad>
+    <icon-pad keyName="facebook" name="Facebook"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="hangouts" name="Hangouts"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="disney" name="迪士尼"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="skype" name="Skype"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="taobao" name="淘宝"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="amazon" name="亚马逊"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="ebay" name="易贝"></icon-pad>
   </Col>
   <Col :span="2">
     <icon-pad keyName="tiktok" name="抖音"></icon-pad>
   </Col>
   <Col :span="2">
     <icon-pad keyName="redbook" name="小红书"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="weibo" name="微博"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="wechat" name="微信"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="qq" name="QQ"></icon-pad>
+  </Col>
+</Row>
+
+### 支付
+
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="wechatPay" name="微信支付"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="alipay" name="支付宝"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="paypal" name="Paypal"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="unionpay" name="中国银联"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="americanexpress" name="美国运通"></icon-pad>
+  </Col>
+  <Col :span="2">
+    <icon-pad keyName="mastercard" name="万事达"></icon-pad>
+  </Col>
+</Row>
+<Row :gutter="20">
+  <Col :span="2">
+    <icon-pad keyName="visa" name="VISA"></icon-pad>
+  </Col>
+  <Col :span="2">
+  </Col>
+  <Col :span="2">
   </Col>
   <Col :span="2">
   </Col>

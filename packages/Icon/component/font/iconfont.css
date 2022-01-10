@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2992575 */
-  src: url('iconfont.woff2?t=1641530636793') format('woff2'),
-       url('iconfont.woff?t=1641530636793') format('woff'),
-       url('iconfont.ttf?t=1641530636793') format('truetype');
+  src: url('iconfont.woff2?t=1641813265671') format('woff2'),
+       url('iconfont.woff?t=1641813265671') format('woff'),
+       url('iconfont.ttf?t=1641813265671') format('truetype');
 }
 
 .iconfont {
@@ -10,6 +10,74 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-visa:before {
+  content: "\e664";
+}
+
+.icon-paypal:before {
+  content: "\e665";
+}
+
+.icon-stype:before {
+  content: "\e666";
+}
+
+.icon-wechatPay:before {
+  content: "\e667";
+}
+
+.icon-taobao:before {
+  content: "\e668";
+}
+
+.icon-unionPay:before {
+  content: "\e669";
+}
+
+.icon-masterCard:before {
+  content: "\e66a";
+}
+
+.icon-amazon:before {
+  content: "\e66b";
+}
+
+.icon-mi:before {
+  content: "\e66c";
+}
+
+.icon-ebay:before {
+  content: "\e66d";
+}
+
+.icon-americanExpress:before {
+  content: "\e66e";
+}
+
+.icon-disney:before {
+  content: "\e66f";
+}
+
+.icon-facebook:before {
+  content: "\e629";
+}
+
+.icon-hangouts:before {
+  content: "\e64e";
+}
+
+.icon-cart:before {
+  content: "\e661";
+}
+
+.icon-telegram:before {
+  content: "\e662";
+}
+
+.icon-twitter:before {
+  content: "\e663";
 }
 
 .icon-percent:before {
@@ -34,6 +102,10 @@
 
 .icon-fullscreen:before {
   content: "\e65e";
+}
+
+.icon-date:before {
+  content: "\e65f";
 }
 
 .icon-qq:before {
@@ -86,6 +158,10 @@
 
 .icon-stop:before {
   content: "\e65a";
+}
+
+.icon-paperclip:before {
+  content: "\e65b";
 }
 
 .icon-date:before {
