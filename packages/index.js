@@ -10,6 +10,7 @@ import Icon from './Icon'
 import Message from './Message'
 import Video from './Video'
 import Collapse from './Collapse'
+import FormItem from './FormItem'
 
 const components = [
   Row,
@@ -23,7 +24,8 @@ const components = [
   Icon,
   Message,
   Video,
-  Collapse
+  Collapse,
+  FormItem
 ]
 const install = function (Vue) {
   if (install.installed) return
