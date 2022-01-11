@@ -1,5 +1,5 @@
-<div class="fun-plus-checkbox" @click="handlecheckboxClick">
-  <div :class="`checkbox-button ${value ? 'checkbox-button-selected' : ''} ${disabled ? 'checkbox-button-disabled' : ''}`">
+<div class="fun-plus-checkbox">
+  <div :class="`checkbox-button ${value ? 'checkbox-button-selected' : ''} ${disabled ? 'checkbox-button-disabled' : ''}`" @click="handlecheckboxClick">
     <div class="checkbox-button-center">
       <Icon name="finish" />
     </div>

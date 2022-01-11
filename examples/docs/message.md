@@ -11,7 +11,7 @@
 
 :::demo
 ```html
-<Button @click.native="handleShowNormalMessage" type="primary">展示普通的全局提示</Button>
+<Button @click="handleShowNormalMessage" type="primary">展示普通的全局提示</Button>
 
 <script>
 export default {
@@ -29,7 +29,7 @@ export default {
 :::demo
 ```html
 <div class="demo">
-  <Button v-for="item in arr" :key="item.type" @click.native="handleShowMessage(item)">{{item.name}}</Button>
+  <Button v-for="item in arr" :key="item.type" @click="handleShowMessage(item)">{{item.name}}</Button>
 </div>
 
 <script>

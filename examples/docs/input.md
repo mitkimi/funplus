@@ -12,9 +12,9 @@
 ### 基础用法
 :::demo
 ```html
-<Row>
+<div>
   <Input v-model="inputDemo" />
-</Row>
+</div>
 
 <script>
   export default {
@@ -35,12 +35,12 @@
 
 :::demo
 ```html
-<Row>
+<div>
   <Input v-model="inputOk" ok />
-</Row>
-<Row>
+</div>
+<div>
   <Input v-model="inputError" error />
-</Row>
+</div>
 
 <script>
   export default {
@@ -55,13 +55,32 @@
 ```
 :::
 
+### 可清除
+可以给输入框增加可清除按钮。
+
+:::demo
+```html
+<Input v-model="clearableInput" clearable />
+
+<script>
+export default {
+  data () {
+    return {
+      clearableInput: 'clearable input'
+    }
+  }
+}
+</script>
+```
+:::
+
 ### 密码
 在使用密码输入框时，只需要将 type 设置为 password 格式，即可在输入框右侧显示眼睛图标
 :::demo
 ```html
-<Row>
+<div>
   <Input type="password" v-model="password" />
-</Row>
+</div>
 
 <script>
   export default {

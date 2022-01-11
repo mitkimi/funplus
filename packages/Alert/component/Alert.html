@@ -1,0 +1,11 @@
+<div :class="`fun-plus-alert ${fluid ? 'fun-plus-alert-fluid' : ''}`">
+  <div :class="['icon', `icon-type-${type}`]">
+    <Icon :name="type" />
+  </div>
+  <div class="message">
+    <div v-if="content" v-html="content"></div>
+    <div v-else>
+      <slot></slot>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,12 @@
 # 更新日志
 
+### 0.0.10
+> 2022-01-11
+
+- update usage of input
+- update input has clearable
+- update button has secondary(type)
+
 ### 0.0.9
 > 2022-01-11
 

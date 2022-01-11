@@ -9,5 +9,10 @@ export default {
     },
     loading: Boolean,
     fluid: Boolean
+  },
+  methods: {
+    handleOnClick () {
+      this.$emit('click', ...arguments)
+    }
   }
 }

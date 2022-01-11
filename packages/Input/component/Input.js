@@ -76,6 +76,16 @@ export default {
           arr.splice(index, 1)
         }
       })
+    },
+    handleClearInput () {
+      this.currentValue = ''
+    },
+    handleTogglePasswordType () {
+      if (this.currentType === 'password') {
+        this.currentType = 'text'
+      } else {
+        this.currentType = 'password'
+      }
     }
   }
 }

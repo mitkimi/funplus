@@ -25,13 +25,31 @@
 
 :::demo
 ```html
-<Row>
+<div>
   <Button type="primary">Primary Button</Button>
   <Button>Default Button</Button>
   <Button type="dashed">Dashed Button</Button>
   <Button type="text">Text Button</Button>
   <Button type="link">Link Button</Button>
-</Row>
+</div>
+```
+:::
+
+### 隐藏的按钮类型
+实际的开发过程中，我们发现需要一个简易按钮，跟默认按钮非常接近，但要更次级。因此我们设计了一个二级按钮。在非常少的场景使用。
+
+:::demo
+```html
+<Button type="secondary">Secondary Button</Button>
+```
+:::
+
+### 占满整行
+在一些表单场景需要使按钮占满整行。
+
+:::demo
+```html
+<Button type="primary" fluid>fluid Button</Button>
 ```
 :::
 
@@ -39,26 +57,26 @@
 危险应该是一种属性，而不应该是一种类型。
 :::demo
 ```html
-<Row>
+<div class="demo">
   <Button type="primary">Primary Button</Button>
   <Button type="primary" danger>Danger Primary Button</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button>Default Button</Button>
   <Button danger>Danger Default Button</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button type="dashed">Dashed Button</Button>
   <Button type="dashed" danger>Danger Dashed Button</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button type="text">Text Button</Button>
   <Button type="text" danger>Danger Text Button</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button type="link">Link Button</Button>
   <Button type="link" danger>Danger Link Button</Button>
-</Row>
+</div>
 
 <style>
 .demo-line {
@@ -75,22 +93,22 @@
 
 :::demo
 ```html
-<Row>
+<div class="demo">
   <Button type="primary" loading>Loading Button</Button>
   <Button loading>Loading Button</Button>
   <Button type="dashed" loading>Loading Button</Button>
   <Button type="text" loading>Loading Button</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button
     v-for="item, index in buttons"
     :type="item.type"
     :loading="item.isLoading"
-    @click.native="handleLoading(index)"
+    @click="handleLoading(index)"
     style="margin-right: 10px;">
     {{ item.name }}
   </Button>
-</Row>
+</div>
 
 <script>
 export default {
@@ -139,43 +157,44 @@ export default {
 
 :::demo
 ```html
-<Row>
+<div class="demo">
   <Button type="primary">Primary Button</Button>
   <Button type="primary" disabled>Primary Button(Disabled)</Button>
   <Button type="primary" danger>Primary Button</Button>
   <Button type="primary" disabled danger>Primary Button(Disabled)</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button>Default Button</Button>
   <Button disabled>Default Button(Disabled)</Button>
   <Button danger>Default Button</Button>
   <Button disabled danger>Default Button(Disabled)</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button type="dashed">Dashed Button</Button>
   <Button type="dashed" disabled>Dashed Button(Disabled)</Button>
   <Button type="dashed" danger>Dashed Button</Button>
   <Button type="dashed" disabled danger>Dashed Button(Disabled)</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button type="text">Text Button</Button>
   <Button type="text" disabled>Text Button(Disabled)</Button>
   <Button type="text" danger>Text Button</Button>
   <Button type="text" disabled danger>Text Button(Disabled)</Button>
-</Row>
-<Row>
+</div>
+<div class="demo">
   <Button type="link">Link Button</Button>
   <Button type="link" disabled>Link Button(Disabled)</Button>
   <Button type="link" danger>Link Button</Button>
   <Button type="link" disabled danger>Link Button(Disabled)</Button>
-</Row>
+</div>
 ```
 :::
 
 ## Attributes
 | 参数 | 说明 | 类型 | 可选值 | 默认值 | 备注 |
 | :----- | :----- | :----- | :----- | :----- | :----- |
-| type | 类型 | String | primary/default/dashed/text/link | default | - |
+| type | 类型 | String | primary/default/dashed/text/link/(secondary) | default | - |
 | danger | 是否为危险按钮 | Boolean | - | false | - |
+| fluid | 是否为占满整行的按钮 | Boolean | - | false | - |
 | loading | 是否为加载中按钮 | Boolean | - | false | - |
 | disabled | 是否为禁用按钮 | Boolean | - | false | - |
