@@ -9,7 +9,8 @@ export default {
     },
     ok: Boolean,
     error: Boolean,
-    placeholder: String
+    placeholder: String,
+    clearable: Boolean
   },
   model: {
     prop: 'value',
