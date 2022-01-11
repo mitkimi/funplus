@@ -1,5 +1,11 @@
 # 更新日志
 
+### 0.0.9
+> 2022-01-11
+
+- add textarea/number-input/radio/checkbox/switch
+- update form-item
+
 ### 0.0.7-0.0.8
 > 2022-01-10
 

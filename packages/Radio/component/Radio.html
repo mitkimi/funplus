@@ -1,0 +1,8 @@
+<div class="fun-plus-radio" @click="handleRadioClick">
+  <div :class="`radio-button ${name === currentValue ? 'radio-button-selected' : ''} ${disabled ? 'radio-button-disabled' : ''}`">
+    <div class="radio-button-center"></div>
+  </div>
+  <div class="slot">
+    <slot></slot>
+  </div>
+</div>

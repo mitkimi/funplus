@@ -1,18 +1,50 @@
 .fun-plus-input {
+  display: inline-flex;
   margin: 10px 0;
   height: 40px;
-  border-radius: 20px;
   background: #F3F3F3;
   border: 1px solid #F3F3F3;
-  padding: 0 20px;
   transition: all, 300ms;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   &:hover {
     background: #f7f7f7;
+  }
+  button {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #4C9EEA;
+    cursor: pointer;
+    background: #4C9EEA;
+    color: #ffffff;
+    &.minus {
+      border-radius: 8px 0 0 8px;
+    }
+    &.plus {
+      border-radius: 0 8px 8px 0;
+    }
+    &:hover {
+      background: #6FB1EF;
+    }
+    &:active {
+      background: #1B80DD;
+    }
+    &:disabled {
+      background: #f9f9f9;
+      color: #e7e7e7;
+      border: 1px solid #d3d3d3;
+      cursor: not-allowed;
+    }
   }
   input {
     height: 40px;
     line-height: 40px;
-    width: 100%;
+    width: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
     background: transparent;
     border: 0;
     outline: none;
@@ -23,7 +55,6 @@
   }
 }
 .fun-plus-input-default {
-  width: 300px;
 }
 .fun-plus-input-inputed,
 .fun-plus-input-focus {

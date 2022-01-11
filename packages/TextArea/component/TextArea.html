@@ -1,0 +1,8 @@
+<div :class="['fun-plus-input', 'fun-plus-input-default', ...inputClass]">
+  <textarea
+    :type="currentType"
+    @focus="handleInputFocus"
+    @blur="handleInputBlur"
+    :rows="rows"
+    :placeholder="placeholder">{{currentValue}}</textarea>
+</div>

@@ -7,6 +7,7 @@ export default {
       type: String,
       default: 'default'
     },
-    loading: Boolean
+    loading: Boolean,
+    fluid: Boolean
   }
 }

@@ -1,2 +1,17 @@
 # TextArea 文本域
-待补充
+
+:::demo
+```html
+<TextArea v-model="textarea" />
+
+<script>
+export default {
+  data () {
+    return {
+      textarea: ''
+    }
+  }
+}
+</script>
+```
+:::

@@ -1,0 +1,14 @@
+<div :class="['fun-plus-input', 'fun-plus-input-default', ...inputClass]">
+  <button class="minus" :disabled="minusDisabled" @click="handleMinusClick">
+    <Icon name="minus" />
+  </button>
+  <input
+    type="text"
+    v-model="currentValue"
+    onkeyup = "value=value.replace(/[^\d]/g,'')"
+    @focus="handleInputFocus"
+    @blur="handleInputBlur" />
+  <button class="plus" :disabled="plusDisabled" @click="handlePlusClick">
+    <Icon name="plus" />
+  </button>
+</div>

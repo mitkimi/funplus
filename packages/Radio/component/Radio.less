@@ -1,0 +1,49 @@
+.fun-plus-radio {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 25px 10px 0;
+  .radio-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    cursor: pointer;
+    position: relative;
+    transition: all, 300ms;
+    .radio-button-center {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all, 300ms;
+    }
+  }
+  .radio-button-selected {
+    border: 1px solid #1BBA48;
+    .radio-button-center {
+      background: #1BBA48;
+    }
+  }
+  .radio-button-disabled {
+    cursor: not-allowed;
+    background: #d3d3d3;
+    &.radio-button-selected {
+      border: 1px solid #c2c2c2;
+      .radio-button-center {
+        background: #c2c2c2;
+      }
+    }
+  }
+  .slot {
+    margin-left: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

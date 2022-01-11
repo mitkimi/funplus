@@ -11,6 +11,11 @@ import Message from './Message'
 import Video from './Video'
 import Collapse from './Collapse'
 import FormItem from './FormItem'
+import TextArea from './TextArea'
+import NumberInput from './NumberInput'
+import Radio from './Radio'
+import CheckBox from './CheckBox'
+import Switch from './Switch'
 
 const components = [
   Row,
@@ -25,7 +30,12 @@ const components = [
   Message,
   Video,
   Collapse,
-  FormItem
+  FormItem,
+  TextArea,
+  NumberInput,
+  Radio,
+  CheckBox,
+  Switch
 ]
 const install = function (Vue) {
   if (install.installed) return
