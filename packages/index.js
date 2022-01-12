@@ -20,6 +20,7 @@ import Switch from './Switch'
 import Alert from './Alert'
 import Dialog from './Dialog'
 import Drawer from './Drawer'
+import '../examples/assets/animate.less'
 
 const components = [
   Row,
