@@ -1,0 +1,60 @@
+.fun-plus-dialog {
+  .cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(4px);
+  }
+  .dialog-container {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    .dialog {
+      width: 400px;
+      border-radius: 8px;
+      background: #ffffff;
+      border: 1px solid #b2b2b2;
+      box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.18);
+      .dialog-head {
+        height: 40px;
+        border-bottom: 1px solid #b2b2b2;
+        position: relative;
+        .dialog-title {
+          padding: 0 15px;
+          line-height: 40px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .dialog-close {
+          width: 14px;
+          height: 14px;
+          font-size: 14px;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .dialog-body {
+        padding: 15px;
+        min-height: 80px;
+      }
+      .dialog-foot {
+        padding: 0 15px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .footer-button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

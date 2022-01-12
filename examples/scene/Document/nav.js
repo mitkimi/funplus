@@ -200,9 +200,9 @@ const components = [
     style: {}
   },
   {
-    key: 'modal',
+    key: 'dialog',
     isMarkdownPage: true,
-    name: 'Modal 对话框',
+    name: 'Dialog 对话框',
     style: {}
   },
   {

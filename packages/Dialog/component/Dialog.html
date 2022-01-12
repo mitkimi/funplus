@@ -1,0 +1,20 @@
+<div class="fun-plus-dialog" v-if="visible">
+  <div class="cover"></div>
+  <div class="dialog-container">
+    <div class="dialog">
+      <div class="dialog-head">
+        <div class="dialog-title">{{title}}</div>
+        <div class="dialog-close" @click="handleOnCancel">
+          <Icon name="times" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <slot></slot>
+      </div>
+      <div class="dialog-foot">
+        <Button class="footer-button" type="secondary" @click="handleOnCancel">{{ cancelText }}</Button>
+        <Button class="footer-button" type="primary" @click="handleOnOk">{{ okText }}</Button>
+      </div>
+    </div>
+  </div>
+</div>

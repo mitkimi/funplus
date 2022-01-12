@@ -18,6 +18,8 @@ import Radio from './Radio'
 import CheckBox from './CheckBox'
 import Switch from './Switch'
 import Alert from './Alert'
+import Dialog from './Dialog'
+import Drawer from './Drawer'
 
 const components = [
   Row,
@@ -39,7 +41,9 @@ const components = [
   Radio,
   CheckBox,
   Switch,
-  Alert
+  Alert,
+  Dialog,
+  Drawer
 ]
 const install = function (Vue) {
   if (install.installed) return

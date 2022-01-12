@@ -1,0 +1,44 @@
+.fun-plus-drawer {
+  .cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(4px);
+  }
+  .drawer-container {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.25);
+    .ops {
+      height: 60px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .op-button {
+        width: 14px;
+        height: 14px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .drawer-body {
+      padding: 0 20px 20px;
+      .drawer-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

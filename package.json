@@ -23,7 +23,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "github-markdown-css": "^4.0.0",
-    "highlight.js": "^10.4.1",
+    "highlight.js": "^10.7.0",
     "path": "^0.12.7",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.3",
