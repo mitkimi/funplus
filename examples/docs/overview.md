@@ -187,8 +187,8 @@ FunPlus 提供的相对丰富，功能简单且够用的组件。
 </Row>
 <Row :gutter="20">
   <Col :span="3">
-    <router-link to="/components/modal">
-      <Card title="Modal">
+    <router-link to="/components/dialog">
+      <Card title="Dialog">
         <img src="../assets/images/overview/modal.png" style="margin: 20px 0; height: 124px; object-fit: contain;" />
       </Card>
     </router-link>

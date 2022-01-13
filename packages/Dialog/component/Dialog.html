@@ -1,7 +1,7 @@
 <div class="fun-plus-dialog" v-if="visible">
-  <div class="cover"></div>
+  <div :class="coverClass"></div>
   <div class="dialog-container">
-    <div class="dialog">
+    <div :class="dialogClass">
       <div class="dialog-head">
         <div class="dialog-title">{{title}}</div>
         <div class="dialog-close" @click="handleOnCancel">

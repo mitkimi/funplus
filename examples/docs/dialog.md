@@ -6,8 +6,8 @@
 <Dialog
   :visible.sync="show"
   title="对话框标题"
-  @onOk="show = false"
-  @onCancel="show = false">
+  @onOk="handleOk"
+  @onCancel="handleCancel">
   确定要 xxxx 吗？
 </Dialog>
 
@@ -23,6 +23,12 @@ export default {
   methods: {
     handleShowDialog () {
       this.show = true
+    },
+    handleOk () {
+      this.$message.success('点击了确定按钮')
+    },
+    handleCancel () {
+      this.$message.warning('点击了取消按钮')
     }
   }
 }
