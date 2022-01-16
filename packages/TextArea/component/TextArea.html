@@ -3,6 +3,7 @@
     :type="currentType"
     @focus="handleInputFocus"
     @blur="handleInputBlur"
+    @input="handleInputChange"
     :rows="rows"
     :placeholder="placeholder">{{currentValue}}</textarea>
 </div>

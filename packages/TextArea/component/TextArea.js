@@ -79,6 +79,14 @@ export default {
           arr.splice(index, 1)
         }
       })
+    },
+    handleInputChange (event) {
+      if (!event) {
+        this.currentValue = null
+      } else {
+        this.currentValue = event.target.value
+      }
+      this.$emit('sync', this.currentValue)
     }
   }
 }
