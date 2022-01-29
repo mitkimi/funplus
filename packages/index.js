@@ -20,6 +20,7 @@ import Switch from './Switch'
 import Alert from './Alert'
 import Dialog from './Dialog'
 import Drawer from './Drawer'
+import Select from './Select'
 import '../examples/assets/animate.less'
 
 const components = [
@@ -44,7 +45,8 @@ const components = [
   Switch,
   Alert,
   Dialog,
-  Drawer
+  Drawer,
+  Select
 ]
 const install = function (Vue) {
   if (install.installed) return

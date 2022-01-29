@@ -1,0 +1,20 @@
+<div :class="['fun-plus-select', 'fun-plus-select-default', ...selectClass]"
+  @click="handleShowOptions">
+  <div class="selected-label">{{selected ? selected.label : ''}}</div>
+  <div class="ops">
+    <div class="button">
+      <!-- <Icon name="arrow-up" /> -->
+      <Icon name="arrow-down" />
+    </div>
+  </div>
+  <Collapse>
+    <div class="select-option-container" v-if="selectOptionShow">
+      <div :class="`select-option ${selected && selected.value === item.value ? 'active' : ''}`"
+        v-for="item, index in options"
+        :key="`option_${index}`"
+        @click.stop="handleSelectOption(item)">
+        <div class="label">{{item.label}}</div>
+      </div>
+    </div>
+  </Collapse>
+</div>
