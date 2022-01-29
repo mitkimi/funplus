@@ -3,8 +3,8 @@
   <div class="selected-label">{{selected ? selected.label : ''}}</div>
   <div class="ops">
     <div class="button">
-      <!-- <Icon name="arrow-up" /> -->
-      <Icon name="arrow-down" />
+      <Icon name="arrow-up" v-if="selectOptionShow" />
+      <Icon name="arrow-down" v-else />
     </div>
   </div>
   <Collapse>
