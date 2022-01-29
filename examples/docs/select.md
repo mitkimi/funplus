@@ -3,7 +3,7 @@
 :::demo
 ```html
 <div>
-  <Select v-model="cool" :options="selections" />
+  <Select v-model="cool" filterable :options="selections" />
 </div>
 
 <script>
