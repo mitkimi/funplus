@@ -4,7 +4,6 @@ export default {
     vmodel: [String, Number],
     value: [String, Number],
     filterable: Boolean,
-    placeholder: String,
     options: {
       type: Array,
       default: []
@@ -18,6 +17,7 @@ export default {
     return {
       selected: null,
       selectOptionShow: false,
+      placeholder: '',
       keywords: '',
       selectClass: [],
       optionList: []
@@ -32,10 +32,19 @@ export default {
       })
     },
     selected (next) {
+      if (next) {
+        this.selectClass.push('fun-plus-select-inputed')
+      } else {
+        this.selectClass.filter((item, index, arr) => {
+          if (item === 'fun-plus-select-inputed') {
+            arr.splice(index, 1)
+          }
+        })
+      }
       this.$emit('sync', next.value)
     },
     keywords (next) {
-      this.updateOptionList(next)
+      next && this.updateOptionList(next)
     }
   },
   mounted () {
@@ -59,10 +68,14 @@ export default {
     },
     handleSelectOption (buffer) {
       this.selected = buffer
+      this.placeholder = buffer.label
+      this.keywords = ''
       this.selectOptionShow = false
     },
     handleInputFocus () {
+      this.init()
       this.selectClass.push('fun-plus-select-focus')
+      this.handleSelectorClick()
     },
     handleInputBlur () {
       this.focus = false

@@ -5,6 +5,7 @@
     v-model="keywords"
     @focus.stop="handleInputFocus"
     @blur.stop="handleInputBlur"
+    @click.stop
     :placeholder="placeholder"
     v-if="filterable" />
   <div class="selected-label" v-else>{{selected ? selected.label : ''}}</div>
