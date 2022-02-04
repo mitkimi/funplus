@@ -45,6 +45,9 @@ export default {
     },
     keywords (next) {
       next && this.updateOptionList(next)
+    },
+    options () {
+      this.init()
     }
   },
   mounted () {

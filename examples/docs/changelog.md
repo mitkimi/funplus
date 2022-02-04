@@ -1,5 +1,12 @@
 # 更新日志
 
+### 0.0.14
+> 2022-02-04
+
+- fix: select options init
+- fix: input operation buttons
+- great Olympic opening ceremony & great Olympic flame
+
 ### 0.0.13
 > 2022-01-30
 
