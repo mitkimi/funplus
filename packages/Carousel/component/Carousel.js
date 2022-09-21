@@ -5,6 +5,7 @@ Swiper.use(Pagination)
 Swiper.use(Autoplay)
 Swiper.use(Navigation)
 export default {
+  name: 'Carousel',
   props: {
     mode: {
       type: String,
@@ -88,6 +89,9 @@ export default {
           clickable: true,
           type: 'custom',
           renderCustom: (swiper, current, total) => {
+            if (this.indicator === 'countdown') {
+              return this.renderCountdownPagination(current, total);
+            }
             return this.renderRollPagination(current, total);
           }
         },

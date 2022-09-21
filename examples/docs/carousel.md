@@ -12,18 +12,18 @@ export default {
       carousel: [{
           name: 'Bar Party1', // string，用于 roll 形式的指示器
           type: 'image', // string, 背景类型，image/video,
-          src: imagePng, // string, 背景源
+          src: 'http://cdn.illiaccess.com/images/IMG_0677.JPG', // string, 背景源
         },{
           name: 'Bar Party2', // string，用于 roll 形式的指示器
           type: 'image', // string, 背景类型，image/video,
-          src: imagePng, // string, 背景源
+          src: 'http://cdn.illiaccess.com/images/IMG_0677.JPG', // string, 背景源
         },
         {
           name: 'Bar Party3', // string，用于 roll 形式的指示器
           headline: '<div>Bar Party</div>', // string，用于大标题，v-html 绑定，可以自定义字号尺寸
           sub: '<div>12.12 20:00 | Sweet Bistro, Beijing</div>', // string，用于副标题，v-html 绑定，可以自定义字号尺寸
           type: 'image', // string, 背景类型，image/video,
-          src: imagePng, // string, 背景源
+          src: 'http://cdn.illiaccess.com/images/IMG_0677.JPG', // string, 背景源
           buttons: [ // 按钮，用于渲染按钮
             {
               text: 'Reserve Now', // 按钮文字
