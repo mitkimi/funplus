@@ -1,9 +1,9 @@
-import 'highlight.js/styles/github.css'
 import '@/assets/docs.less'
-import hljs from 'highlight.js'
 import Header from '@/components/Header'
-import Menu from './nav'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/github.css'
 import allMds from '../../docs'
+import Menu from './nav'
 
 const highlightCode = () => {
   const preEl = document.querySelectorAll('pre')

@@ -1,0 +1,43 @@
+<div :class="`swiper mode-${mode}`">
+  <div class="swiper-wrapper">
+    <div
+      v-for="(item, index) in data"
+      :data-href="item.link"
+      :key="index"
+      class="swiper-slide"
+    >
+      <div class="banner">
+        <video v-if="item.type === 'video'" class="video" :src="item.src" muted autoplay loop></video>
+        <img class="image" v-else-if="item.type === 'image'" :src="item.src" />
+
+        <div :class="['slogan', {'mode-difference': magic}]">
+          <div v-if="item.headline" v-html="item.headline"></div>
+          <div v-if="item.sub" v-html="item.sub"></div>
+          <div v-if="item.buttons && item.buttons.length" class="button-container">
+            <a
+              class="button"
+              v-for="(btn, index) in item.buttons"
+              :key="index"
+              :target="btn.target"
+              :href="btn.type === 'route' ? btn.to : 'javascript:(0)'"
+              :onclick="btn.type === 'callback' && btn.callback"
+            >{{btn.text}}</a>
+          </div>
+          <div v-if="item.links && item.links.length" class="link-container">
+            <a
+              class="link"
+              v-for="(link, index) in item.buttons"
+              :key="index"
+              :target="link.target"
+              :href="link.to"
+            >{{link.text}} <Icon name="arrow-right" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>

@@ -1,27 +1,28 @@
-import Row from './Row'
-import Col from './Col'
+import '../examples/assets/animate.less'
+import Alert from './Alert'
 import Breadcrumb from './Breadcrumb'
 import Button from './Button'
-import Input from './Input'
-import Skeleton from './Skeleton'
 import Card from './Card'
-import Stepper from './Stepper'
-import Icon from './Icon'
-import Message from './Message'
-import Video from './Video'
-import Collapse from './Collapse'
-import Form from './Form'
-import FormItem from './FormItem'
-import TextArea from './TextArea'
-import NumberInput from './NumberInput'
-import Radio from './Radio'
+import Carousel from './Carousel'
 import CheckBox from './CheckBox'
-import Switch from './Switch'
-import Alert from './Alert'
+import Col from './Col'
+import Collapse from './Collapse'
 import Dialog from './Dialog'
 import Drawer from './Drawer'
+import Form from './Form'
+import FormItem from './FormItem'
+import Icon from './Icon'
+import Input from './Input'
+import Message from './Message'
+import NumberInput from './NumberInput'
+import Radio from './Radio'
+import Row from './Row'
 import Select from './Select'
-import '../examples/assets/animate.less'
+import Skeleton from './Skeleton'
+import Stepper from './Stepper'
+import Switch from './Switch'
+import TextArea from './TextArea'
+import Video from './Video'
 
 const components = [
   Row,
@@ -31,6 +32,7 @@ const components = [
   Input,
   Skeleton,
   Card,
+  Carousel,
   Stepper,
   Icon,
   Message,

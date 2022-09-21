@@ -1,0 +1,145 @@
+.swiper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  :deep(.swiper-pagination) {
+    bottom: 15Px;
+  }
+  :deep(.swiper-pagination-customs) {
+    display: inline-block;
+    width: 4Px;
+    height: 4Px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    transition: all, 300ms;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  @keyframes activeStyle {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  :deep(.swiper-pagination-customs-active) {
+    position: relative;
+    width: 30Px;
+    border-radius: 5px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      animation: activeStyle 3000ms infinite;
+      background: #FFF;
+    }
+  }
+  :deep(.swiper-pagination-roll) {
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 17px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+  }
+  :deep(.swiper-pagination-roll-active) {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFF;
+    margin: 10px 0;
+    span {
+      position: relative;
+    }
+    span::after {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      width: 80%;
+      height: 3px;
+      background: #FFF;
+      border-radius: 1px;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+    }
+  }
+}
+.mode-card {
+  .swiper-slide {
+    width: 70%;
+    overflow: hidden;
+  }
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .video {
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.mode-difference {
+  mix-blend-mode: difference;
+}
+.slogan {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  color: #FFF;
+  font-family: Impact;
+  text-align: center;
+  vertical-align: top;
+  transform: translateX(-50%);
+  z-index: 9;
+  .hide-link-style {
+    display: flex;
+    width: 150Px;
+  }
+  .button-container,
+  .link-container {
+    margin-top: 22px;
+  }
+  .button-container .button {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 0 22px;
+    text-decoration: none;
+    box-sizing: border-box;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .link-container .link {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFF;
+    line-height: 20px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+}

@@ -212,6 +212,18 @@ const components = [
     style: {}
   },
   {
+    name: 'presents',
+    style: {
+      ...LevelTwoStyle
+    }
+  },
+  {
+    key: 'carousel',
+    isMarkdownPage: true,
+    name: 'Carousel 走马灯',
+    style: {}
+  },
+  {
     name: 'media',
     style: {
       ...LevelTwoStyle
